@@ -19,7 +19,7 @@ public class Lab5Dice {
 
 	public static final void main(String... aArgs){
 		  
-		int side;
+		int side = 1;
 		String choice = "y";
 		
 	  System.out.println("Welcome!  Roll dice? y/n");
@@ -33,8 +33,8 @@ public class Lab5Dice {
 			
 			Random randomGenerator = new Random();
 		    for (int i = 1; i <= 2; ++i){
-		      int randomInt = randomGenerator.nextInt(side);
-		      System.out.println(" " + randomInt);
+		      int someInt = randomGenerator.nextInt(side);
+		      System.out.println(" " + someInt);
 		      
 		}
 			System.out.println("Roll again?");
